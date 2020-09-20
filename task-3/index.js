@@ -83,8 +83,18 @@ class Node {
         }
     }
 
-  contains(value) {
-    return ;
+  contains(tree,value) {
+    if(tree.value === value){
+      return true
+    }
+    let found = false;
+    if( tree.left){
+      found =contains(tree.left,value)
+    }
+    if( !found && tree.left){
+      found =contains(tree.right,value)
+    }
+    return found
 }
 }
 
