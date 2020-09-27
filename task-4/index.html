@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper--form">
+            <input id="wrapper--form--input--city" type="text" value="" placeholder="Enter your city here..." form="data">
+            <input id="wrapper--for--input--country" type="text" value="" placeholder="Enter your country here..." form="data">
+            <button id="btn">Submit</button>
+        </div>
+        <div class="wrapper--location">
+            <h2 class="temperature">0&deg;C</h2>
+            <h2 class="timezone">Use location service</h2>
+        </div>
+        <div class="wrapper--forecast">
+            <div class="wrapper--forecast-first">
+                <img class="icon"></img>
+                <p class="humidity"></p>
+                <p class="wind--direction">Wind</p>
+                <p class="temperature-degree">&deg;C</p> 
+            </div>
+            <div class="wrapper--forecast--second">
+                <p class="wind--speed"></p>  
+                <p class="realfeel">It feels like ..</p>
+                <p class="pressure"></p>
+            </div>
+            <div class="wrapper--forecast--third">
+                <p class="cloudcover"></p>
+                <p class="observation-time"></p>
+                <p class="Uv-index"></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy coded by <strong>Andrey Sushkevich</strong></p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
